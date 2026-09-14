@@ -1,0 +1,19 @@
+{
+	"name": "Lookup_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_CRM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "files_array.json",
+				"fileSystem": "file"
+			}
+		},
+		"schema": {}
+	}
+}
