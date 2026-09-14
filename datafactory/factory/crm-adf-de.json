@@ -1,0 +1,15 @@
+{
+	"name": "crm-adf-de",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "83350894-0229-47c4-8019-7f91ac395203",
+		"tenantId": "1e78f4d1-8495-4773-968e-dc827f898c36"
+	}
+}
