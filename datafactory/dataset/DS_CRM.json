@@ -1,0 +1,30 @@
+{
+	"name": "DS_CRM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Http_CRM",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "ruturajmanedeshmukh45-source/CRM_Project/refs/heads/dev/data/@{dataset().p_file}.csv",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
